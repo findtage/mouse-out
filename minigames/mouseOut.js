@@ -4,28 +4,28 @@ export class MouseOut extends Phaser.Scene {
     }
 
     preload() {
-	this.load.image('intro_scene_MouseOut', 'mouse-out/assets/intro_screen.png');
-	this.load.image('difficulty_scene_MouseOut', 'mouse-out/assets/difficulty_screen.png');
-	this.load.image('game_scene_MouseOut', 'mouse-out/assets/game_scene.png');
-	this.load.image('easy_button_MouseOut', 'mouse-out/assets/easy.png');
-	this.load.image('med_button_MouseOut', 'mouse-out/assets/med.png');
-	this.load.image('hard_button_MouseOut', 'mouse-out/assets/hard.png');
-	this.load.image('hex_MouseOut', 'mouse-out/assets/hex.png');
-	this.load.image('end_game_MouseOut', 'mouse-out/assets/end_game.png');
+	this.load.image('intro_scene_MouseOut', 'assets/intro_screen.png');
+	this.load.image('difficulty_scene_MouseOut', 'assets/difficulty_screen.png');
+	this.load.image('game_scene_MouseOut', 'assets/game_scene.png');
+	this.load.image('easy_button_MouseOut', 'assets/easy.png');
+	this.load.image('med_button_MouseOut', 'assets/med.png');
+	this.load.image('hard_button_MouseOut', 'assets/hard.png');
+	this.load.image('hex_MouseOut', 'assets/hex.png');
+	this.load.image('end_game_MouseOut', 'assets/end_game.png');
 	
-	this.load.spritesheet('mouse_MouseOut', 'mouse-out/assets/mouse.png', {
+	this.load.spritesheet('mouse_MouseOut', 'assets/mouse.png', {
 	    frameWidth: 38,
 	    frameHeight: 35
 	});
-	this.load.spritesheet('wall_MouseOut', 'mouse-out/assets/trap.png', {
+	this.load.spritesheet('wall_MouseOut', 'assets/trap.png', {
 	    frameWidth: 41,
 	    frameHeight: 131
 	});
 	
-	this.load.audio('winningSound_MouseOut', 'mouse-out/assets/1_MouseOutWinningSound.mp3');
-	this.load.audio('moveSound_MouseOut', 'mouse-out/assets/2_MouseOutMoveSound.mp3');
-	this.load.audio('raiseSound_MouseOut', 'mouse-out/assets/3_MouseOutSoundRaise.mp3');
-	this.load.audio('gameOverSound_MouseOut','mouse-out/assets/4_MouseOutGameOverSound.mp3');
+	this.load.audio('winningSound_MouseOut', 'assets/1_MouseOutWinningSound.mp3');
+	this.load.audio('moveSound_MouseOut', 'assets/2_MouseOutMoveSound.mp3');
+	this.load.audio('raiseSound_MouseOut', 'assets/3_MouseOutSoundRaise.mp3');
+	this.load.audio('gameOverSound_MouseOut','assets/4_MouseOutGameOverSound.mp3');
 
     }
 
