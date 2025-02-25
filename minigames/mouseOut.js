@@ -33,6 +33,7 @@ export class MouseOut extends Phaser.Scene {
         // Start with Intro
         this.currentMode = 'intro';
         this.mouseOnEdge = false;
+	this.isGameOver = false;
         this.showIntro();
         
     }
@@ -300,7 +301,8 @@ export class MouseOut extends Phaser.Scene {
                     return;
                 } else {
                     this.moveMouse();
-                    this.input.on('pointerdown', this.handleWallPlacement, this);
+                    if (this.isGameOver == false)
+                        this.input.on('pointerdown', this.handleWallPlacement, this);
                 }
                 
             });
@@ -488,6 +490,7 @@ export class MouseOut extends Phaser.Scene {
     gameOver(msg) {
         // No more walls
         this.input.off('pointerdown', this.handleWallPlacement, this);
+	this.isGameOver = true;
 
         let score = Math.max(0, 121 - this.turnCount);
         if (msg == 'Mouse Trapped!'){
