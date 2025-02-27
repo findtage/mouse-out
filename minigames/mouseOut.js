@@ -45,7 +45,7 @@ export class MouseOut extends Phaser.Scene {
         this.introBG = this.add.image(-4, 0, 'intro_scene_MouseOut').setOrigin(0).setScale(1.008, 1.008);
 
         // Start button (invisible ellipse over the region)
-        this.startButton = this.add.ellipse(136, 399, 95, 950, 0xffffff, 0).setOrigin(0.5).setInteractive();
+        this.startButton = this.add.ellipse(136, 399, 95, 95, 0xffffff, 0).setOrigin(0.5).setInteractive();
         this.startButton.on('pointerdown', () => {
             this.introBG.destroy();
             this.startButton.destroy();
